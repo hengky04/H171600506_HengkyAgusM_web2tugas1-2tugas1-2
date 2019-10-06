@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pengumuman extends Model
 {
-    protected $table='artikel';
+    protected $table='pengumuman';
 
     	protected $fillable=[
-    		'judul','isi','users_id','kategori_artikel_id'
+    		'judul','isi','users_id','kategori_pengumuman_id'
     	];
 
     	protected $casts=[ ];

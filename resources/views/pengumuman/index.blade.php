@@ -10,12 +10,12 @@
 
                     <div class="card-body">
                         <div class="row justify-content-right">
-                            <a href="{!! route('pengumuman.create') !!}" class="btn btn-primary">Tambah Data</a>
+                            <a href="{!! route('pengumuman.create') !!}" class="btn btn-danger">Tambah Data</a>
                         </div>
                     </div>
 
                 <table class="table table-bordered">
-                    <thead class="bg-warning">
+                    <thead class="bg-info">
                         <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Judul</th>
@@ -33,11 +33,11 @@
                         <td>{!! $item->id !!}</td>
                         <td>{!! $item->judul !!}</td>
                         <td>{!! $item->isi !!}</td>
-                        <td>{!! $item->kategori_artikel_id !!}</td>
+                        <td>{!! $item->kategori_pengumuman_id !!}</td>
                         <td>{!! $item->users_id !!}</td>
                         <td>{!! $item->created_at->format('d/m/Y H:i:s') !!}</td>
                         <td>
-                         <a href="{!! route('pengumuman.show',[$item->id]) !!}"class="btn btn-primary">Lihat</a>
+                         <a href="{!! route('pengumuman.show',[$item->id]) !!}"class="btn btn-danger">Lihat</a>
                         </td>
                         </tr>
                        @endforeach
